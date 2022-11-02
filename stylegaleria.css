@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: aqua;
+    
+    font-size: 1.5em;
+    
+}
+
+NAV{   
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    text-align: center;
+    text-shadow: #333;
+    text-align: center;
+    align-items: center;
+    font-size: large;
+}
+
+nav a{
+    color: white;
+    padding: 24px 45px;
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+}
+
+aside{
+    display: contents;
+   
+
+}
+
+
+.gallerybody{
+
+    margin: 0%;
+    padding: 0%;
+    height: 100; 
+}
+
+.aside{
+    display:grid;
+    padding:0px;
+    height: 100px;
+    width: 200px;
+
+}
+#TAIGUEL{
+    display: grid;
+    justify-content: flex-start;
+    width: 1300px;
+    height: 1300px;
+    
+}
+
+
+.row {
+
+    display: flex;
+    padding: 3%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+
+.column {
+
+    flex: 25%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+ 
+   
+}
+
+.column img{
+
+    margin-top: 100px;
+    width: 400px
+
+}
+
+@media (max-width: 600px){
+    .column{
+        flex:100%;
+    }
+}
+
+/*CSS HOME
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    font-weight: 400;
+    text-align: center;
+    font-size: 40px;
+    padding: 40px;
+}
+
+.linea{
+    background-color: #550b51;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+#Inicio{
+    width: 50px;
+    height: 50px;
+    background:#000;
+    
+}
+
+
+
+img{
+    width: 350px;
+    height: 350px;
+}
+
+.Galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr)); 
+    width: 95%;   
+    margin: auto;
+    grid-gap: 10px;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.Galeria img{
+
+    vertical-align: top;
+    object-fit: cover;
+    transition: transform 0,5s;
+    overflow: hidden;
+    border-radius: 5px;
+   
+}
+
+.Galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0,0, .5);
+}
+
+.Galeria a:hover img{
+    filter: blur(2px);
+    
+}
+
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0,0, .5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-box img{
+        width:75vw;
+        max-height: 70vh;
+}
+
+.light-box:target{
+    transform: scale(1);
+}
+
+.close{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: #851919;
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    
+    
+}
+
+.next{
+    display: block;
+    background: #851919;
+    color: white;
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+@media screen and(max-width:400px){
+    .Galeria{
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+    .close{
+        top: 20px;
+        right: 20px;
+       
+    }
+}
+
+

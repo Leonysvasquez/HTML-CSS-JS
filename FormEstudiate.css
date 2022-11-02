@@ -1,0 +1,156 @@
+body{   
+    min-height: 100vh;
+    background: linear-gradient(to right,#13aec9 ,#095bac);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.login-card-container{
+    position: relative;
+    width: 550px;
+    padding: 6rem;
+    background: rgba(255, 255,255,.5);
+    border-radius: 10px;
+}
+
+.login-card-container::before{
+    position: absolute;
+    content: '';
+    background: rgba(255,255,255,.15);
+    inset: 0;
+    transform: rotate(-8deg);
+    z-index: -1;
+}
+
+.logo{
+    margin: botton 2rm;
+
+}
+
+.logo img {
+    width: 80px;
+}
+
+.logo,
+.login-card-header{
+    text-align:center;
+    
+}
+
+
+.logincard-formd a{
+    text-decoration: none;
+    color: #33469a;
+}
+
+.logincard-form a:hover{
+    text-decoration: underline;
+    color: #095bac;
+    padding: 5px;
+}
+
+.login-card-header{
+    margin-bottom: 2rem;
+}
+
+.login-card-header h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: #095bac;
+}
+div{
+   
+}
+.login-card-header h1 + div{
+    font-size: calc(1rem*.8);
+    opacity: .8;
+}
+
+.logincard-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;   
+}
+
+.login-card-form .form-item{
+    position: relative;
+}
+
+.logincard-form .form-item{
+    position:static;
+    top: 82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+
+}
+
+.login-card-foooter .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 7px;  
+}
+
+.login-card-foooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(1rem*.8);
+    margin-bottom:.5rem;
+}
+
+.logincard-form input[type="text"],
+.logincard-form input[type="text"],
+.logincard-form input[type="tel"],
+.logincard-form input[type="tel"],
+.logincard-form input[type="email"]{
+    border: none;
+    outline:none;
+    background: rgba(blue, 0, 0, 0.);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 90%;
+    transition:background.5s;
+}
+
+.logincard-form input:focus{
+    background: white;
+}
+.logincard-form:hover{
+    color:#095bac;
+    cursor: pointer;
+
+}
+
+
+.login-card-footer{
+font-size: large;
+}
+
+.logincard-form button{
+    background:#095bac;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+
+.logincard-form  button:hover{
+    background-color:#1362c9;
+    cursor: pointer;
+}
+
+.logincard-form button{
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
